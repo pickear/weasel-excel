@@ -3,18 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.weasel.excel</groupId>
 	<artifactId>weasel-excel</artifactId>
-	<version>1.0.0-RELEASE</version>
+	
+	<parent>
+		<groupId>com.weasel.root</groupId>
+		<artifactId>weasel-root</artifactId>
+		<version>1.0.0-RELEASE</version>
+		<relativePath>../weasel-root/pom.xml</relativePath>
+	</parent>
 	
 	<dependencies>
 		<dependency>
 			<groupId>net.sourceforge.jexcelapi</groupId>
 			<artifactId>jxl</artifactId>
-			<version>2.6.12</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
 		</dependency>
 	</dependencies>
 	

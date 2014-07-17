@@ -9,17 +9,24 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
-
 import com.weasel.excel.ExcelReader;
 import com.weasel.excel.ExcelWriter;
 
-/*
- * 
+/**
+ * @author Dylan
+ * @mail pickear@gmail.com
+ * @time 2014年7月17日
  */
 public class ExcelTest {
+	
+	
+	public static void main(String[] args) {
+		ExcelTest excel = new ExcelTest();
+		excel.exportTest();
+	//	excel.exportTest2();
+	//	excel.uploadTest2();
+	}
 
-	@Test
 	public void exportTest() {
 		try {
 			OutputStream outputStream = new FileOutputStream(new File("D:\\test.xls"));
@@ -34,7 +41,7 @@ public class ExcelTest {
 			e.printStackTrace();
 		}
 	}
-	@Test
+	
 	public void exportTest2() {
 		try {
 			OutputStream outputStream = new FileOutputStream(new File("D:\\test.xls"));
@@ -50,7 +57,6 @@ public class ExcelTest {
 		}
 	}
 	
-	@Test
 	public void uploadTest2(){
 		
 		try {
